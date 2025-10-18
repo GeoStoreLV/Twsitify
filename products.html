@@ -1,0 +1,182 @@
+<!-- Coded by Toms Edvards Vucens (Team GeoStore.LV)-->
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catalogue — Twistify</title>
+  <meta name="description" content="Twistify — Baltic Speedcube distributor">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="Logo.png">
+  <meta property="og:title" content="Twistify — Baltic Speedcube distributor">
+  <meta property="og:description" content="Everything for Speedcubing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://twistify.lv/">
+  <meta property="og:image" content="https://twistify.lv/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function toggleNav(){ document.querySelector('.nav').classList.toggle('open'); }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./"><img class="brand-logo" src="Logo full white.png" alt="" aria-hidden="true"></a>
+      <button class="nav-toggle" aria-label="Atvērt navigāciju" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Galvenā navigācija">
+        <a href="./">Home</a>
+        <a href="./products.html">Catalogue</a>
+      </nav>
+      <a href="javascript:void(0)" class="cart-icon" onclick="openCart()">
+        <img src="img/CART.png" style="width:32px;height:32px;"> <span id="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Product catalogue</h1>
+      <div class="toolbar">
+        <select id="cat" class="input" onchange="filterProducts()">
+          <option value="all">Featured products</option>
+          <option value="333">3x3</option>
+          <option value="222">2x2</option>
+          <option value="444">4x4</option>
+          <option value="555">5x5</option>
+          <option value="666">6x6</option>
+          <option value="777">7x7</option>
+          <option value="pyra">Pyraminx</option>
+          <option value="skewb">Skewb</option>
+          <option value="sq1">Square-1</option>
+          <option value="mega">Megaminx</option>
+          <option value="clock">Clock</option>
+        </select>
+      </div>
+
+
+      <div class="grid cards-3" itemscope itemtype="https://schema.org/ItemList">
+        <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MOYUWEILONGV11.jpg" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu WeiLong V11 3x3</h3>
+            <select id="v11-variant" onchange="updateV11Variant()">
+              <option value="31.99">20-Magnet Ball-core, Maglev, UV coated — €31.99</option>
+              <option value="26.99">8-Magnet Ball-core, Maglev, UV coated — €26.99</option>
+              <option value="17.99">Magnetic UV — €17.99</option>
+              <option value="14.99">Magnetic — €14.99</option>
+            </select>
+            <h2 id="v11-price">€31.99</h2>
+            <button id="v11-button" class="btn btn-primary" onclick="addToCart('MoYu WeiLong V11 3x3 (20-Magnet Ball-core, Maglev, UV coated)', 31.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/GAN16.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">GAN 16 3x3</h3>
+            <p class="muted" itemprop="description">MagLev, UV coated.</p>
+            <p></p>
+            <h2>€61.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('GAN 16 3x3', 61.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/XMAN333V4.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">X-Man Tornado V4 3x3</h3>
+            <select id="xman-v4-variant" onchange="updateXMANV4Variant()">
+              <option value="32.99">Pioneer, UV coated — €32.99</option>
+              <option value="24.99">Flagship — €24.99</option>
+            </select>
+            <h2 id="xman-v4-price">€32.99</h2>
+            <button id="xman-v4-button" class="btn btn-primary" onclick="addToCart('X-Man Tornado V4 3x3 (Pioneer, UV coated)', 32.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/GAN12.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">GAN 12 3x3</h3>
+            <select id="gan12-variant" onchange="updateGAN12Variant()">
+              <option value="45.99">MagLev, UV coated — €45.99</option>
+              <option value="43.99">MagLev — €43.99</option>
+              <option value="38.99">Leap — €38.99</option>
+            </select>
+            <h2 id="gan12-price">€45.99</h2>
+            <button id="gan12-button" class="btn btn-primary" onclick="addToCart('GAN 12 3x3 (MagLev, UV coated)', 45.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MOYURS3MV5.jpg" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu RS3M V5 3x3</h3>
+            <select id="rs3mv5-variant" onchange="updateRS3MV5Variant()">
+              <option value="17.99">Ball-Core, UV + Robot — €17.99</option>
+              <option value="11.99">MagLev + Robot — €11.99</option>
+              <option value="7.99">Dual Adjustment — €7.99</option>
+              <option value="6.99">Magnetic — €6.99</option>
+            </select>
+            <h2 id="rs3mv5-price">€17.99</h2>
+            <button id="rs3mv5-button" class="btn btn-primary" onclick="addToCart('MoYu RS3M V5 3x3 (Ball-Core, UV + Robot)', 17.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MOYURS3M.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu RS3M 2020 3x3</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€7.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('MoYu RS3M 2020 3x3 (Magnetic)', 7.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MOYUMEILONGV2.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu MeiLong V2 3x3</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€4.49</h2>
+            <button class="btn btn-primary" onclick="addToCart('MoYu MeiLong V2 3x3 (Magnetic)', 4.49); openCart()">Add to cart</button>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="kontakti">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="Logo Alt.png" alt="GeoStore.LV Logo">
+        <div>
+          <strong>Twistify</strong><br>
+          <a href="mailto:info@twistify.lv">info@twistify.lv</a>
+        </div>
+      </div>
+      <div class="muted small">© <span id="year"></span> Twistify • All Rights Reserved.</div>
+    </div>
+  </footer>
+
+      <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+          <h2>Your cart</h2>
+          <p id="cart-items"></p>
+          <h3>Total: €<span id="total-price">0.00</span></h3><br>
+          <button class="btn btn-secondary" onclick="closeCart()">Close</button>
+          <a href="./order" class="btn btn-primary">Make order</a>
+        </div>
+      </div>
+
+  <script src="script.js"></script>
+  <script src="prices.js"></script>
+
+    <script>
+      function filterProducts() {
+        const q = document.getElementById('q') ? document.getElementById('q').value.toLowerCase().trim() : "";
+        const cat = document.getElementById('cat').value;
+        document.querySelectorAll('.grid .product-card').forEach(card => {
+          const matchText = (card.innerText || '').toLowerCase();
+          const inCat = (cat === 'all' || card.dataset.cat === cat);
+          card.style.display = (matchText.includes(q) && inCat) ? '' : 'none';
+        });
+      }
+    </script>
+  
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
