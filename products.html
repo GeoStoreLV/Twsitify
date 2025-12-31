@@ -1,4 +1,4 @@
-<!-- Coded by Toms Edvards Vucens (Team GeoStore.LV)-->
+<!-- Coded by Toms Edvards Vucens (Team Twistify)-->
 <!DOCTYPE html>
 <html lang="lv">
 <head>
@@ -30,7 +30,8 @@
       </button>
       <nav class="nav" aria-label="Galvenā navigācija">
         <a href="./">Home</a>
-        <a href="./products.html">Catalogue</a>
+        <a href="./products">Catalogue</a>
+        <a href="./team">Team Twistify</a>
       </nav>
       <a href="javascript:void(0)" class="cart-icon" onclick="openCart()">
         <img src="img/CART.png" style="width:32px;height:32px;"> <span id="cart-count">0</span>
@@ -64,13 +65,13 @@
             <img src="img/MOYUWEILONGV11.jpg" loading="lazy" itemprop="image">
             <h3 itemprop="name">MoYu WeiLong V11 3x3</h3>
             <select id="v11-variant" onchange="updateV11Variant()">
-              <option value="31.99">20-Magnet Ball-core, Maglev, UV coated — €31.99</option>
-              <option value="26.99">8-Magnet Ball-core, Maglev, UV coated — €26.99</option>
-              <option value="17.99">Magnetic UV — €17.99</option>
-              <option value="14.99">Magnetic — €14.99</option>
+              <option value="37.99">20-Magnet Ball-core, Maglev, UV — €37.99</option>
+              <option value="32.99">8-Magnet Ball-core, Maglev, UV — €32.99</option>
+              <option value="20.99">Magnetic UV — €20.99</option>
+              <option value="16.99">Magnetic — €16.99</option>
             </select>
-            <h2 id="v11-price">€31.99</h2>
-            <button id="v11-button" class="btn btn-primary" onclick="addToCart('MoYu WeiLong V11 3x3 (20-Magnet Ball-core, Maglev, UV coated)', 31.99); openCart()">Add to cart</button>
+            <h2 id="v11-price">€16.99 - €37.99</h2>
+            <button id="v11-button" class="btn btn-primary" onclick="addToCart('MoYu WeiLong V11 3x3 (20-Magnet Ball-core, Maglev, UV coated)', 37.99); openCart()">Add to cart</button>
         </article>
 
         <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
@@ -78,44 +79,44 @@
             <h3 itemprop="name">GAN 16 3x3</h3>
             <p class="muted" itemprop="description">MagLev, UV coated.</p>
             <p></p>
-            <h2>€61.99</h2>
-            <button class="btn btn-primary" onclick="addToCart('GAN 16 3x3', 61.99); openCart()">Add to cart</button>
+            <h2>€69.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('GAN 16 3x3', 69.99); openCart()">Add to cart</button>
         </article>
 
         <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
             <img src="img/XMAN333V4.png" loading="lazy" itemprop="image">
             <h3 itemprop="name">X-Man Tornado V4 3x3</h3>
             <select id="xman-v4-variant" onchange="updateXMANV4Variant()">
-              <option value="32.99">Pioneer, UV coated — €32.99</option>
-              <option value="24.99">Flagship — €24.99</option>
+              <option value="37.99">Pioneer, UV — €37.99</option>
+              <option value="28.99">Flagship — €28.99</option>
             </select>
-            <h2 id="xman-v4-price">€32.99</h2>
-            <button id="xman-v4-button" class="btn btn-primary" onclick="addToCart('X-Man Tornado V4 3x3 (Pioneer, UV coated)', 32.99); openCart()">Add to cart</button>
+            <h2 id="xman-v4-price">€28.99 - €37.99</h2>
+            <button id="xman-v4-button" class="btn btn-primary" onclick="addToCart('X-Man Tornado V4 3x3 (Pioneer, UV coated)', 37.99); openCart()">Add to cart</button>
         </article>
 
         <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
             <img src="img/GAN12.png" loading="lazy" itemprop="image">
             <h3 itemprop="name">GAN 12 3x3</h3>
             <select id="gan12-variant" onchange="updateGAN12Variant()">
-              <option value="45.99">MagLev, UV coated — €45.99</option>
+              <option value="47.99">MagLev, UV — €47.99</option>
               <option value="43.99">MagLev — €43.99</option>
               <option value="38.99">Leap — €38.99</option>
             </select>
-            <h2 id="gan12-price">€45.99</h2>
-            <button id="gan12-button" class="btn btn-primary" onclick="addToCart('GAN 12 3x3 (MagLev, UV coated)', 45.99); openCart()">Add to cart</button>
+            <h2 id="gan12-price">€38.99 - €47.99</h2>
+            <button id="gan12-button" class="btn btn-primary" onclick="addToCart('GAN 12 3x3 (MagLev, UV coated)', 47.99); openCart()">Add to cart</button>
         </article>
 
         <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
             <img src="img/MOYURS3MV5.jpg" loading="lazy" itemprop="image">
             <h3 itemprop="name">MoYu RS3M V5 3x3</h3>
             <select id="rs3mv5-variant" onchange="updateRS3MV5Variant()">
-              <option value="17.99">Ball-Core, UV + Robot — €17.99</option>
-              <option value="11.99">MagLev + Robot — €11.99</option>
+              <option value="19.99">Ball-Core, UV + Robot — €19.99</option>
+              <option value="12.99">MagLev + Robot — €12.99</option>
               <option value="7.99">Dual Adjustment — €7.99</option>
               <option value="6.99">Magnetic — €6.99</option>
             </select>
-            <h2 id="rs3mv5-price">€17.99</h2>
-            <button id="rs3mv5-button" class="btn btn-primary" onclick="addToCart('MoYu RS3M V5 3x3 (Ball-Core, UV + Robot)', 17.99); openCart()">Add to cart</button>
+            <h2 id="rs3mv5-price">€6.99 - €19.99</h2>
+            <button id="rs3mv5-button" class="btn btn-primary" onclick="addToCart('MoYu RS3M V5 3x3 (Ball-Core, UV + Robot)', 19.99); openCart()">Add to cart</button>
         </article>
 
         <article class="card product-card" data-cat="333" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
@@ -135,6 +136,433 @@
             <h2>€4.49</h2>
             <button class="btn btn-primary" onclick="addToCart('MoYu MeiLong V2 3x3 (Magnetic)', 4.49); openCart()">Add to cart</button>
         </article>
+
+        <article class="card product-card" data-cat="222" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/GAN251.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">GAN 251 2x2</h3>
+            <select id="gan251-variant" onchange="updateGAN251Variant()">
+              <option value="37.99">Leap, UV — €37.99</option>
+              <option value="32.99">Leap — €32.99</option>
+              <option value="26.99">Pro — €26.99</option>
+              <option value="19.99">Air — €19.99</option>
+            </select>
+            <h2 id="gan251-price">€19.99 - €37.99</h2>
+            <button id="gan251-button" class="btn btn-primary" onclick="addToCart('GAN 251 2x2 (Leap, UV)', 37.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="222" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/WEIPOV5.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu WeiPo WR V5 2x2</h3>
+            <p class="muted" itemprop="description">Magnetic, 20-Magnet Ball-core, UV</p>
+            <p></p>
+            <h2>€29.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('MoYu WeiPo WR V5 2x2 (Magnetic, 20-Magnet Ball-core, UV)', 29.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="222" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/WEIPOWRS.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu WeiPo WR S 2x2</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€13.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('MoYu WeiPo WR S 2x2 (Magnetic)', 13.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="222" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/mgcbeta.jpg" loading="lazy" itemprop="image">
+            <h3 itemprop="name">YJ MGC Beta 2x2</h3>
+            <select id="mgcbeta-variant" onchange="updateMGCBETAVariant()">
+              <option value="16.99">Omni-Positioning, UV — €16.99</option>
+              <option value="14.99">Magnetic — €14.99</option>
+            </select>
+            <h2 id="mgcbeta-price">€14.99 - €16.99</h2>
+            <button id="mgcbeta-button" class="btn btn-primary" onclick="addToCart('YJ MGC Beta 2x2 (Omni-Positioning, UV)', 16.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="222" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MGC2X2.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">YJ MGC 2x2</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€10.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('YJ MGC 2x2 (Magnetic)', 10.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="222" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MOYURS2M.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu RS2M Evolution 2x2</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€7.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('MoYu RS2M Evolution 2x2 (Magnetic)', 7.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="444" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MOYU444AOSU.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu AoSu V7 4x4</h3>
+            <select id="moyuaosu-variant" onchange="updateMOYUAOSUVariant()">
+              <option value="42.99">Triple-Track, UV — €42.99</option>
+              <option value="34.99">Double-Track, UV — €34.99</option>
+              <option value="19.99">Single-Track, UV — €19.99</option>
+              <option value="15.99">Single-Track — €15.99</option>
+            </select>
+            <h2 id="moyuaosu-price">€15.99 - €42.99</h2>
+            <button id="moyuaosu-button" class="btn btn-primary" onclick="addToCart('MoYu AoSu V7 4x4 (Triple-Track, UV)', 42.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="444" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/GAN460V2.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">GAN 460 V2 4x4</h3>
+            <p class="muted" itemprop="description">Magnetic, UV.</p>
+            <p></p>
+            <h2>€52.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('GAN 460 V2 4x4 (Magnetic, UV)', 52.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="444" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MGC444.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">YJ MGC 4x4</h3>
+            <select id="mgc444-variant" onchange="updateMGC444Variant()">
+              <option value="28.99">Magnetic, Speed-Micro Actuator — €28.99</option>
+              <option value="20.99">Magnetic, UV — €20.99</option>
+              <option value="17.99">Magnetic — €17.99</option>
+            </select>
+            <h2 id="mgc444-price">€17.99 - €28.99</h2>
+            <button id="mgc444-button" class="btn btn-primary" onclick="addToCart('YJ MGC 4x4 (Speed-Micro Actuator)', 28.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="444" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/RS4M.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu RS4M 4x4</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€13.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('MoYu RS4M 4x4 (Magnetic)', 13.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="555" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/AOCHUANG.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu AoChuang V6 5x5</h3>
+            <select id="AoChuang555-variant" onchange="updateAoChuang555Variant()">
+              <option value="40.99">Triple-Track, UV — €40.99</option>
+              <option value="35.99">Double-Track, UV — €35.99</option>
+              <option value="22.99">Single-Track, UV — €22.99</option>
+              <option value="15.99">Single-Track — €15.99</option>
+            </select>
+            <h2 id="AoChuang555-price">€15.99 - €40.99</h2>
+            <button id="AoChuang555-button" class="btn btn-primary" onclick="addToCart('MoYu AoChuang V6 5x5 (Triple-Track, UV)', 40.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="555" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/GAN562.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">GAN 562 5x5</h3>
+            <select id="GAN562-variant" onchange="updateGAN562Variant()">
+              <option value="51.99">Magnetic, Core magnets, Frosted — €51.99</option>
+              <option value="43.99">Magnetic, Core magnets, UV — €43.99</option>
+            </select>
+            <h2 id="GAN562-price">€43.99 - €51.99</h2>
+            <button id="GAN562-button" class="btn btn-primary" onclick="addToCart('GAN 562 5x5 (Triple-Track, UV)', 51.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="555" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MGC555.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">YJ MGC 5x5</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€17.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('YJ MGC 5x5 (Magnetic)', 17.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="555" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/RS5M.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu MeiLong 5x5</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€7.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('MoYu MeiLong 5x5 (Magnetic)', 7.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="666" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/XMAN666.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">X-Man Shadow V3 6x6</h3>
+            <p class="muted" itemprop="description">Magnetic, Ball-Core, UV.</p>
+            <p></p>
+            <h2>€31.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('X-Man Shadow V3 6x6 (Magnetic, Ball-Core, UV)', 31.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="666" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/AOSHI.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu AoShi WR M 6x6</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€29.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('MoYu AoShi WR M 6x6 (Magnetic)', 29.99); openCart()">Add to cart</button>
+        </article>
+        
+        <article class="card product-card" data-cat="666" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MGC666.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">YJ MGC 6x6</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€18.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('YJ MGC 6x6 (Magnetic)', 18.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="666" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MEILONG666.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu MeiLong V2 6x6</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€13.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('MoYu MeiLong V2 6x6 (Magnetic)', 13.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="777" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/XMANSPARK777.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">X-Man Spark V2 7x7</h3>
+            <p class="muted" itemprop="description">Magnetic, Ball-Core, UV.</p>
+            <p></p>
+            <h2>€32.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('X-Man Spark V2 7x7 (Magnetic, Ball-Core, UV)', 31.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="777" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/AOFU.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu AoFu V5 7x7</h3>
+            <select id="MoYuAoFu-variant" onchange="updateMoYuAoFuVariant()">
+              <option value="48.99">Triple-Track — €48.99</option>
+              <option value="41.99">Double-Track — €43.99</option>
+              <option value="32.99">Single-Track — €32.99</option>
+            </select>
+            <h2 id="MoYuAoFu-price">€32.99 - €48.99</h2>
+            <button id="MoYuAoFu-button" class="btn btn-primary" onclick="addToCart('MoYu AoFu V5 7x7 (Triple-Track)', 51.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="777" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MGC777.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">YJ MGC 7x7</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€30.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('YJ MGC 7x7 (Magnetic)', 30.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="777" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MEILONG777.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu MeiLong V2 7x7</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€14.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('MoYu MeiLong V2 7x7 (Magnetic)', 14.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="clock" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/QIYICLOCK.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">QiYi Clock</h3>
+            <select id="Clock-variant" onchange="updateClockVariant()">
+              <option value="21.99">Standard — €21.99</option>
+              <option value="21.99">Pink — €21.99</option>
+              <option value="21.99">Apple Green — €21.99</option>
+              <option value="21.99">Glacier Blue — €21.99</option>
+              <option value="21.99">Lilac — €21.99</option>
+            </select>
+            <h2 id="Clock-price">€21.99</h2>
+            <button id="Clock-button" class="btn btn-primary" onclick="addToCart('QiYi Clock (Standard)', 21.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="clock" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/SHENGSOCLOCKV2.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">ShengShou V2 Clock</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€13.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('ShengShou V2 Clock (Magnetic)', 13.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="clock" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/SHENGSOCLOCK.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">ShengShou Clock</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€9.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('ShengShou Clock (Magnetic)', 9.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="mega" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/DAYANMEGAV2.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">DaYan V2 Megaminx</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€24.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('DaYan V2 Megaminx (Magnetic)', 24.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="mega" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/DAYANMEGA.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">DaYan Pro Megaminx</h3>
+            <select id="dayanPRO-variant" onchange="updateDayanPROVariant()">
+              <option value="24.99">Magnetic, Ball-Core, Large — €24.99</option>
+              <option value="23.99">Magnetic, Ball-Core — €23.99</option>
+            </select>
+            <h2 id="dayanPRO-price">€23.99 - €24.99</h2>
+            <button id="dayanPRO-button" class="btn btn-primary" onclick="addToCart('DaYan Pro Megaminx (Magnetic, Ball-Core, Large)', 24.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="mega" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/GANMEGA.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">GAN V2 Megaminx</h3>
+            <select id="GANmega-variant" onchange="updateGANmegaVariant()">
+              <option value="44.99">Magnetic, MagLev, Ball-Core, UV — €44.99</option>
+              <option value="44.99">Magnetic, MagLev, Ball-Core, UV, Black — €44.99</option>
+              <option value="42.99">Magnetic, MagLev, Ball-Core — €42.99</option>
+            </select>
+            <h2 id="GANmega-price">€42.99 - €44.99</h2>
+            <button id="GANmega-button" class="btn btn-primary" onclick="addToCart('GAN V2 Megaminx (Magnetic, MagLev, Ball-Core, UV)', 44.99); openCart()">Add to cart</button>
+        </article>
+        
+        <article class="card product-card" data-cat="mega" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/YJYUHU.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">YJ YuHu Megaminx</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€11.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('YJ YuHu Megaminx (Magnetic)', 11.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="pyra" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/DAYANPYRA.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">DaYan V3 Pyraminx</h3>
+            <select id="DayanV3Pyra-variant" onchange="updateDayanV3PyraVariant()">
+              <option value="19.99">Magnetic, MagLev, Ball-Core, UV — €19.99</option>
+              <option value="14.99">Magnetic, Ball-Core — €14.99</option>
+            </select>
+            <h2 id="DayanV3Pyra-price">€14.99 - €19.99</h2>
+            <button id="DayanV3Pyra-button" class="btn btn-primary" onclick="addToCart('DaYan V3 Pyraminx (Magnetic, MagLev, Ball-Core, UV)', 19.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="pyra" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/GANPYRA.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">GAN Pyraminx</h3>
+            <select id="GANPyra-variant" onchange="updateGANPyraVariant()">
+              <option value="27.99">Magnetic, Enhanced, UV — €27.99</option>
+              <option value="19.99">Magnetic, Enhanced — €19.99</option>
+              <option value="15.99">Magnetic — €15.99</option>
+            </select>
+            <h2 id="GANPyra-price">€15.99 - €27.99</h2>
+            <button id="GANPyra-button" class="btn btn-primary" onclick="addToCart('GAN Pyraminx (Magnetic, Enhanced, UV)', 27.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="pyra" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MOYUPYRA.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu WeiLong Pyraminx</h3>
+            <select id="MOYUWeiPyra-variant" onchange="updateMOYUWeiPyraVariant()">
+              <option value="13.99">Magnetic, MagLev — €13.99</option>
+              <option value="12.99">Magnetic — €12.99</option>
+            </select>
+            <h2 id="MOYUWeiPyra-price">€12.99 - €13.99</h2>
+            <button id="MOYUWeiPyra-button" class="btn btn-primary" onclick="addToCart('MoYu WeiLong Pyraminx (Magnetic, MagLev)', 13.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="pyra" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/XMANBELL.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">QiYi X-Man Bell V2 Pyraminx</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€15.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('QiYi X-Man Bell V2 Pyraminx (Magnetic)', 15.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="pyra" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/RSMOYU.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu RS Pyraminx</h3>
+            <select id="MOYUrsPyra-variant" onchange="updateMOYUrsPyraVariant()">
+              <option value="10.99">Magnetic, MagLev — €10.99</option>
+              <option value="7.99">Magnetic — €7.99</option>
+            </select>
+            <h2 id="MOYUrsPyra-price">€7.99 - €10.99</h2>
+            <button id="MOYUrsPyra-button" class="btn btn-primary" onclick="addToCart('MoYu WeiLong Pyraminx (Magnetic, MagLev)', 13.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="skewb" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/WEILONGSKEWB.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu WeiLong Skewb</h3>
+            <p class="muted" itemprop="description">Magnetic, MagLev</p>
+            <p></p>
+            <h2>€13.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('MoYu WeiLong Skewb (Magnetic, MagLev)', 13.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="skewb" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/GANSKEWB.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">GAN Skewb</h3>
+            <select id="GANSkewb-variant" onchange="updateGANSkewbVariant()">
+              <option value="28.99">Magnetic, Enhanced, UV — €28.99</option>
+              <option value="21.99">Magnetic, Enhanced — €21.99</option>
+              <option value="16.99">Magnetic — €16.99</option>
+            </select>
+            <h2 id="GANSkewb-price">€16.99 - €28.99</h2>
+            <button id="GANSkewb-button" class="btn btn-primary" onclick="addToCart('GAN Skewb (Magnetic, Enhanced, UV)', 28.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="skewb" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/XMANSKEWB.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">X-Man Wingy V2 Skewb</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€16.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('X-Man Wingy V2 (Magnetic)', 16.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="skewb" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/DAYANSKEB.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">DaYan V2 Skewb</h3>
+            <select id="DayanSkewb-variant" onchange="updateDayanSkewbVariant()">
+              <option value="17.99">Magnetic, MagLev, Ball-Core, UV — €17.99</option>
+              <option value="13.99">Magnetic, MagLev — €13.99</option>
+            </select>
+            <h2 id="DayanSkewb-price">€13.99 - €17.99</h2>
+            <button id="DayanSkewb-button" class="btn btn-primary" onclick="addToCart('DaYan V2 Skewb (Magnetic, MagLev, Ball-Core, UV)', 13.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="skewb" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/RSSKEWB.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">MoYu RS Skewb</h3>
+            <select id="MOYUSkewb-variant" onchange="updateMOYUSkewbVariant()">
+              <option value="10.99">Magnetic, MagLev — €10.99</option>
+              <option value="7.99">Magnetic — €7.99</option>
+            </select>
+            <h2 id="MOYUSkewb-price">€7.99 - €10.99</h2>
+            <button id="MOYUSkewb-button" class="btn btn-primary" onclick="addToCart('MoYu RS Skewb (Magnetic, MagLev, Ball-Core, UV)', 13.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="sq1" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MGCSQ.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">YJ MGC Square-1</h3>
+            <p class="muted" itemprop="description">Magnetic.</p>
+            <p></p>
+            <h2>€15.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('YJ MGC Square-1 (Magnetic)', 15.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="sq1" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/MGCSQV2.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">YJ MGC V2 Square-1</h3>
+            <p class="muted" itemprop="description">Magnetic, UV.</p>
+            <p></p>
+            <h2>€19.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('YJ MGC Square-1 (Magnetic, UV)', 19.99); openCart()">Add to cart</button>
+        </article>
+
+        <article class="card product-card" data-cat="sq1" itemprop="itemListElement" itemscope="True" itemtype="https://schema.org/Product">
+            <img src="img/YUXINSQ.png" loading="lazy" itemprop="image">
+            <h3 itemprop="name">YuXin Little Magic Square-1</h3>
+            <p class="muted" itemprop="description">Magnetic, UV.</p>
+            <p></p>
+            <h2>€8.99</h2>
+            <button class="btn btn-primary" onclick="addToCart('YuXin Little Magic Square-1 (Magnetic)', 8.99); openCart()">Add to cart</button>
+        </article>
+
       </div>
     </div>
   </main>
@@ -142,7 +570,7 @@
   <footer class="site-footer" id="kontakti">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="Logo Alt.png" alt="GeoStore.LV Logo">
+        <img src="Logo Alt.png" alt="Twistify Logo">
         <div>
           <strong>Twistify</strong><br>
           <a href="mailto:info@twistify.lv">info@twistify.lv</a>
