@@ -24,8 +24,8 @@ img{max-width:100%;display:block}
 .narrow{max-width:800px;margin:0 auto}
 .small{font-size:.9rem}
 .muted{color:var(--muted)}
-a:hover{color:var(--accent)}
-a{text-decoration:none;font-weight:500;opacity:.95}
+.team a:hover{color:var(--accent)}
+.team a{text-decoration:none;font-weight:500;opacity:.95}
 
 /* Header */
 .site-header{
